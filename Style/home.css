@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100;0,400;0,500;0,700;0,800;0,900;1,100;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+/* all */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffd60a;
+}
+input{
+    border: none;
+    outline: none;
+    font-size: 2rem;
+}
+body{
+    background: url('../Images/bg-fire.jpg') ; 
+    background-position: center;
+    color:white;
+    font-family: 'Chivo Mono', monospace;
+}
+
+/* header */
+header{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo{
+    font-size: 3rem;
+    font-weight: 700;  
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+
+@media all and (max-width:600px) {
+    header{
+        flex-direction: column;
+        gap: 10px;
+        font-size: 1.7rem;
+    }
+    .nav{
+        justify-content: space-between;
+        font-size: 1.2rem;
+    }
+}
+
+/* search bar */
+.search-bar{
+   margin-top: 20px;
+}
+.search-box{
+    text-align: center;
+    padding: 10px;
+}
+.search-box input{
+    width: 400px;
+    height: 50px;
+    padding: 20px;
+    text-align: center;
+}
+.search-key{
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+
+@media all and (max-width:600px) {
+    .search-box input{
+        width: 250px;
+        height: 40px;
+    
+    }
+}
+
+
+/* display marvels */
+.container{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,300px);
+    justify-content: center;
+    justify-items: center;
+    row-gap: 30px;
+}
+.child{
+    border: 1px solid white;
+    background-color:#161a1d;
+    width: 250px;
+    height: 270px;
+}
+
+.container img{
+    width: 100%;
+    height: 200px;
+}
+.container img:hover{
+    cursor: pointer;
+}
+.child p{
+    margin: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+/* display hero name section */
+.hero-name{
+    text-align: center;
+}
+/*display fav section*/
+.fav{
+    padding: 0 5px;
+    
+}
+.fav img{
+    width: 40px;
+    height: 40px;
+}
+.fav:hover{
+    cursor: pointer;
+}
+.fav:active{
+    cursor: pointer;
+    scale:1.4;
+    
+}
+
+@media all and (max-width:600px){
+
+}
+
+
+
+/* footer */
+footer{
+    background-color: black;
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 8px 4px;
+    position: fixed;
+    bottom: 0;
+}
+
+
+/* profile */
+.hide{
+    display: none;
+}
+
+/* profile-nav */
+
+.profile-div h2{
+    font-size:2rem;
+    margin: 20px ;
+    color:#ffd60a;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    
+}
+.profile-div img{
+    width:300px;
+    height:300px;
+    margin-right: 10px;
+}
+.profile-nav{
+    text-decoration: underline;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 20px;
+    margin-bottom: 20px;
+    
+
+}
+.name-hero{
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+.about,.comic,.series{
+    margin: 0px 10px 60px;
+}
+/* about */
+.about{
+    display: flex;
+    font-size: 2.5rem;
+    font-weight: 500;
+    
+}
+
+
+/* comic */
+.comic{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.comic-item{
+    display: flex;
+    border: 1px solid white;
+    padding:10px;
+    background-color: #161a1d;
+}
+.comic img{
+    display: inline-block;
+
+}
+
+/* series */
+.series{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   column-gap: 20px;
+}
+.series-item{
+    background-color: #161a1d;
+    border: 1px solid white;
+    padding: 10px ;
+    text-align: center;
+}.series-title{
+    padding-top:10px;
+}
+
+@media all and (max-width:600px){
+    .profile-nav{
+        font-size: 1.4rem;
+    }
+    .about{
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.4rem;
+        gap: 20px;
+    }
+    .about img{
+        margin: 0 auto;
+        width: 230px;
+
+    }
+    .comic{
+        grid-template-columns: 1fr ;
+        font-size: 1rem;
+        
+        
+    }
+    .comic-item{
+        flex-direction: column;
+    }
+    .series{
+        grid-template-columns: 1fr ;
+        row-gap: 20px;
+        justify-content: center;
+        justify-items: center;
+     }
+}
