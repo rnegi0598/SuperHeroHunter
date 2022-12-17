@@ -7,7 +7,7 @@ loremText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, iure
 
 async function displayProfile(id){
     searchQuery=`
-    http://gateway.marvel.com/v1/public/characters/${id}?ts=1&apikey=77ce7d3102daafaaa9a139ef76fe789b&hash=81477754fbbff115257d613158113ecc
+    https://gateway.marvel.com/v1/public/characters/${id}?ts=1&apikey=77ce7d3102daafaaa9a139ef76fe789b&hash=81477754fbbff115257d613158113ecc
     `;
     const response=await fetch(searchQuery);
     const data=await response.json();
