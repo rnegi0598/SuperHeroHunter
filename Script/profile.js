@@ -40,8 +40,8 @@ async function comicSection(comics){
     // let response=await fetch(element.resourceURI);
     let arr=[];
     for(let i=0;i<comics.length;i++){
-        element=comics[i];
-        let response=await fetch(element.resourceURI+'?ts=1&apikey=77ce7d3102daafaaa9a139ef76fe789b&hash=81477754fbbff115257d613158113ecc');
+        element="https"+comics[i].resourceURI.substring(4);
+        let response=await fetch(element+'?ts=1&apikey=77ce7d3102daafaaa9a139ef76fe789b&hash=81477754fbbff115257d613158113ecc');
         let data=await response.json();
         let result=data.data.results[0];
         obj={
@@ -76,8 +76,8 @@ async function seriesSection(series){
     // let response=await fetch(element.resourceURI);
     let arr=[];
     for(let i=0;i<series.length;i++){
-        element=series[i];
-        let response=await fetch(element.resourceURI+'?ts=1&apikey=77ce7d3102daafaaa9a139ef76fe789b&hash=81477754fbbff115257d613158113ecc');
+        element="https"+series[i].resourceURI.substring(4);
+        let response=await fetch(element+'?ts=1&apikey=77ce7d3102daafaaa9a139ef76fe789b&hash=81477754fbbff115257d613158113ecc');
         let data=await response.json();
         let result=data.data.results[0];
         obj={
