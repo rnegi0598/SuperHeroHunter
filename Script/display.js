@@ -26,7 +26,6 @@ inputEl.addEventListener('change',async ()=>{
 getAllMarvels();
 
 homeEl.addEventListener('click',()=>{
-    console.log('home clicked');
     getAllMarvels();
     // unhide home(searchBarEl displayEl) hide profile(profile-div)
     searchBarEl.classList.remove('hide');

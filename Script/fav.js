@@ -2,7 +2,7 @@ const favListEl=document.querySelector('.fav-list');
 let favList=JSON.parse(localStorage.getItem('favourites')) || [];
 
 favListEl.innerHTML='';
-console.log(favList);
+
 async function getFav(){
     for(i=0;i<favList.length;i++){
         id=favList[i];
