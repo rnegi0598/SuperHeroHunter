@@ -56,7 +56,7 @@ header{
 
 }
 .fav-list{
-    /* border: 1px solid white; */
+    min-width: 100vh;
     padding: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit,300px);
