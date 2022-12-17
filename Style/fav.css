@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 body{
+    background-color: black;
     background: url('../Images/bg-fire.jpg') ; 
     background-position: center;
     color:white;
