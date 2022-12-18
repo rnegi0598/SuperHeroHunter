@@ -4,7 +4,7 @@ Marvel API is used for creating this application. The Marvel Comics API is a too
 create amazing, uncanny and incredible web sites and applications using data from the 70-plus years of the Marvel age of comics.
 Link to Marvel API : https://developer.marvel.com/ .
 
-Superhero Hunter Website: https://symphonious-mousse-645d4d.netlify.app/index.html
+Superhero Hunter Website: https://rnegi0598.github.io/SuperHeroHunter/
 
 Web View
 
