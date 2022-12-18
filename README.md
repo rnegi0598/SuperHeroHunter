@@ -1,4 +1,4 @@
-# Superhero Hunter App
+# Superhero Hunter App   ![example workflow](https://img.shields.io/badge/Front%20End-HTML%2CCSS%2C%20JS-success)
 This is a super hero hunter app for hunting marvel superheroes . It is built using only html ,css and javascript.
 Marvel API is used for creating this application. The Marvel Comics API is a tool to help developers everywhere 
 create amazing, uncanny and incredible web sites and applications using data from the 70-plus years of the Marvel age of comics.
